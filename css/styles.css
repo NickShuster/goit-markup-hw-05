@@ -83,7 +83,7 @@ text-decoration: none;
     font-weight: 400;
     color: #434455;
     font-style:normal;
-    transition: color 0.25s linear;
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-email:hover,
@@ -100,8 +100,7 @@ color: #404BBF;
             font-weight: 400;
             color: #434455;
             font-style:normal;
-            transition: color 0.25s linear;
-            transform: - cubic-bezier(0.4, 0, 0.2, 1);
+            transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logotype{
@@ -134,7 +133,7 @@ color: #404BBF;
 .menu-link{
         color: #2E2F42;
         position: relative;
-        transition: color 0.25s linear;
+        transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
@@ -277,6 +276,7 @@ background-color: #404BBF;
   border-radius: 4px;
   color: grey;
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-title{
@@ -490,7 +490,10 @@ background-color: #404BBF;
     letter-spacing: 0.04em;
     color: #4D5AE5;
     cursor: pointer;  
-    transition: background-color 250ms cubic-bezier(0.4,0,0.2,1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4,0,0.2,1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-main:hover {
@@ -552,7 +555,8 @@ transform: translateY(0);
 
 .elements-link-gallery {
     display: block;
-    transform: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -580,7 +584,7 @@ transform: translateY(0);
     position: fixed;
     top: 0;
     left: 0;
-    transition: opacity 0.35s linear, visibility 0.35s linear;
+    transition: opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -594,7 +598,7 @@ transform: translateY(0);
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) scale(1);
-    transition: transform 0.35s linear;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-modal-btn {
